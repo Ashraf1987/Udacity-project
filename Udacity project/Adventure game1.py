@@ -8,7 +8,8 @@ monster= random.choice(["Ghost","Skelleton" ," Zompie" ,"half demon","impure vam
 color= random.choice(["Blue","Black","Red","white","purple"])
 ranged_weapons= random.choice([" Holy arrows "," Fire cross bow "," ultrasonic waves "," Demonic shot guns" ,])
 current_points= 30
-###
+
+### Asks if player wants to play again
 def play_over():
     while True:    
             Game_over= input("Play again yes/no ")
@@ -157,6 +158,7 @@ def boss_room(ranged_weapons,color,current_points):
             ### decrasing total points
             print_pause("current points =")
             current_points=current_points - 10
+            print_pause(current_points)
             while True:
                 boss_room2 = input("(Please enter 1 to enter boss room)")
                 if boss_room2== "1":
