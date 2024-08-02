@@ -124,8 +124,6 @@ def first_room(melee_weapon, color, monster, current_points):
                     break
                 else:
                     intro = input("(Please enter 1 to enter first room)")
-
-
 ### Secound room function
 def second_room(melee_weapon, ranged_weapons, color, monster, current_points):
     print_pause("You Enter The second room")
